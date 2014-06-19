@@ -1,0 +1,87 @@
+- hosts: localhost
+  gather_facts: yes 
+  sudo: no
+
+  tasks:
+
+    - name: Install Homebrew
+      shell: ./install_homebrew.sh >> /tmp/hombrew_install_out.txt creates=/usr/local/Cellar
+
+    - name: Update Homebrew
+      command: brew update
+
+    - name: Setup Homebrew Dupes
+      homebrew_tap: tap=homebrew/dupes state=present
+
+    - name: Setup Homebrew Casks
+      homebrew_tap: tap=caskroom/cask state=present
+
+    - name: Install Brew Cask
+      homebrew: name=brew-cask state=present
+
+    - name: Install Python
+      homebrew: name=python state=present
+
+    - name: Install Scala
+      homebrew: name=scala state=present
+
+    - name: Install Rbenv
+      homebrew: name=rbenv state=present
+
+    - name: Add rbenv init to bash_profile
+      lineinfile: dest=~/.bash_profile line='eval "$(rbenv init -)"'
+
+    - name: Install ruby-build
+      homebrew: name=ruby-build state=present
+
+    - name: Install ruby 2.1.2
+      command: rbenv install 2.1.2 creates=~/.rbenv/versions/2.1.2
+
+    - name: Install ruby 2.1.0
+      command: rbenv install 2.1.0 creates=~/.rbenv/versions/2.1.0
+
+    - name: Install ruby 1.9.3
+      command: rbenv install 1.9.3-p545 creates=~/.rbenv/versions/1.9.3-p545
+
+    - name: Install Google Chrome
+      homebrew_cask: name=google-chrome state=present
+
+    - name: Install Opera
+      homebrew_cask: name=opera state=present
+
+    - name: Install Firefox 
+      homebrew_cask: name=firefox state=present
+
+    - name: Install macvim
+      homebrew: name=macvim state=present
+
+    - name: Install sublime
+      homebrew_cask: name=sublime-text state=present
+
+    - name: Install textmate
+      homebrew_cask: name=textmate state=present
+
+    - name: Install emacs
+      homebrew_cask: name=emacs state=present
+
+    - name: Install postgres
+      homebrew: name=postgresql state=present
+
+    - name: Install coreutils
+      homebrew:  name=coreutils state=present
+
+    - name: Install mongodb
+      homebrew: name=mongodb state=present
+
+    - name: Install cassandra
+      homebrew: name=cassandra state=present
+
+    - name: Install neo4j
+      homebrew: name=neo4j state=present
+
+    - name: Install node
+      homebrew: name=node state=present
+
+    - name: Install nginx
+      homebrew: name=nginx state=present
+

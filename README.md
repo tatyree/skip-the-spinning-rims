@@ -1,4 +1,17 @@
-skip-the-spinning-rims
-======================
+# Skip the spinning rims
+## We're on the clock. 
 
-Simple Ansible playbooks to get an OSX box provisioned. 
+A simple Ansible playbook to get an OSX box provisioned. 
+
+1. Clone the project: `git clone git@github.com:tatyree/skip-the-spinning-rims.git`
+
+1. Install ansible (http://docs.ansible.com/intro_installation.html)
+
+1. Run the ansible playbook: `cd skip-the-spinning-rims;
+   ansible-playbook main.yml`
+
+1. If you're asked for a password, enter your standard account password;
+   this is sudo surfacing to allow installation of applications to the
+Application folder. 
+
+
