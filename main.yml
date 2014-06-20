@@ -14,7 +14,4 @@
 
     - include: roles/common/tasks/databases.yml
 
-
-    - name: Install nginx
-      homebrew: name=nginx state=present
-
+    - include: roles/common/tasks/webservers.yml
