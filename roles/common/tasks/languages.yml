@@ -29,3 +29,6 @@
 
 - name: Install node
   homebrew: name=node state=present
+
+- name: Install erlang
+  homebrew: name=erlang state=present
