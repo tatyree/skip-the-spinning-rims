@@ -16,6 +16,8 @@
 - name: Install coreutils
   homebrew:  name=coreutils state=latest
 
+- name: Install git
+  homebrew: name=git state=latest
 # These libs may be needed to build nokogiri
 
 - name: Install libxml2
