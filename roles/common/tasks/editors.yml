@@ -1,0 +1,11 @@
+- name: Install macvim
+  homebrew: name=macvim state=present
+
+- name: Install sublime
+  homebrew_cask: name=sublime-text state=present
+
+- name: Install textmate
+  homebrew_cask: name=textmate state=present
+
+- name: Install emacs
+  homebrew_cask: name=emacs state=present
