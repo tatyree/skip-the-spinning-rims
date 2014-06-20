@@ -5,4 +5,4 @@
   homebrew_cask: name=vagrant state=present
 
 - name: Install s3cmd
-  homebrew: name=s3cmd state=present
+  homebrew: name=s3cmd state=latest

@@ -1,11 +1,14 @@
 - name: Install postgres
-  homebrew: name=postgresql state=present
+  homebrew: name=postgresql state=latest
 
 - name: Install mongodb
-  homebrew: name=mongodb state=present
+  homebrew: name=mongodb state=latest
 
 - name: Install cassandra
-  homebrew: name=cassandra state=present
+  homebrew: name=cassandra state=latest
 
 - name: Install neo4j
-  homebrew: name=neo4j state=present
+  homebrew: name=neo4j state=latest
+
+- name: Install riak
+  homebrew: name=riak state=latest

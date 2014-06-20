@@ -11,23 +11,23 @@
   homebrew_tap: tap=caskroom/cask state=present
 
 - name: Install Brew Cask
-  homebrew: name=brew-cask state=present
+  homebrew: name=brew-cask state=latest
 
 - name: Install coreutils
-  homebrew:  name=coreutils state=present
+  homebrew:  name=coreutils state=latest
 
 # These libs may be needed to build nokogiri
 
 - name: Install libxml2
-  homebrew: name=libxml2 state=present
+  homebrew: name=libxml2 state=latest
 
 - name: Install libxslt
-  homebrew: name=libxslt state=present
+  homebrew: name=libxslt state=latest
 
 - name: Install libiconv
-  homebrew: name=libiconv state=present
+  homebrew: name=libiconv state=latest
 
 - name: Install apple-gcc42
-  homebrew: name=apple-gcc42 state=present
+  homebrew: name=apple-gcc42 state=latest
 
 # End nokogiri libs

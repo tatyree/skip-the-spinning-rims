@@ -1,5 +1,5 @@
 - name: Install macvim
-  homebrew: name=macvim state=present
+  homebrew: name=macvim state=latest
 
 - name: Install sublime
   homebrew_cask: name=sublime-text state=present

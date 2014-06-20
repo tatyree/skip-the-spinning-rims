@@ -4,19 +4,19 @@
 - debug: msg="If your Java application still asks for JRE installation, you might need to reboot or logout/login. Run `brew cask info java` on the command line for more info."
 
 - name: Install Python
-  homebrew: name=python state=present
+  homebrew: name=python state=latest
 
 - name: Install Scala
-  homebrew: name=scala state=present
+  homebrew: name=scala state=latest
 
 - name: Install Rbenv
-  homebrew: name=rbenv state=present
+  homebrew: name=rbenv state=latest
 
 - name: Add rbenv init to bash_profile
   lineinfile: dest=~/.bash_profile line='eval "$(rbenv init -)"'
 
 - name: Install ruby-build
-  homebrew: name=ruby-build state=present
+  homebrew: name=ruby-build state=latest
 
 - name: Install ruby 2.1.2
   command: rbenv install 2.1.2 creates=~/.rbenv/versions/2.1.2
@@ -28,7 +28,7 @@
   command: rbenv install 1.9.3-p545 creates=~/.rbenv/versions/1.9.3-p545
 
 - name: Install node
-  homebrew: name=node state=present
+  homebrew: name=node state=latest
 
 - name: Install erlang
-  homebrew: name=erlang state=present
+  homebrew: name=erlang state=latest
