@@ -4,44 +4,9 @@
 
   tasks:
 
-    - name: Install Homebrew
-      shell: ./install_homebrew.sh >> /tmp/hombrew_install_out.txt creates=/usr/local/Cellar
+    - include: roles/common/tasks/base.yml
 
-    - name: Update Homebrew
-      command: brew update
-
-    - name: Setup Homebrew Dupes
-      homebrew_tap: tap=homebrew/dupes state=present
-
-    - name: Setup Homebrew Casks
-      homebrew_tap: tap=caskroom/cask state=present
-
-    - name: Install Brew Cask
-      homebrew: name=brew-cask state=present
-
-    - name: Install Python
-      homebrew: name=python state=present
-
-    - name: Install Scala
-      homebrew: name=scala state=present
-
-    - name: Install Rbenv
-      homebrew: name=rbenv state=present
-
-    - name: Add rbenv init to bash_profile
-      lineinfile: dest=~/.bash_profile line='eval "$(rbenv init -)"'
-
-    - name: Install ruby-build
-      homebrew: name=ruby-build state=present
-
-    - name: Install ruby 2.1.2
-      command: rbenv install 2.1.2 creates=~/.rbenv/versions/2.1.2
-
-    - name: Install ruby 2.1.0
-      command: rbenv install 2.1.0 creates=~/.rbenv/versions/2.1.0
-
-    - name: Install ruby 1.9.3
-      command: rbenv install 1.9.3-p545 creates=~/.rbenv/versions/1.9.3-p545
+    - include: roles/common/tasks/languages.yml
 
     - name: Install Google Chrome
       homebrew_cask: name=google-chrome state=present

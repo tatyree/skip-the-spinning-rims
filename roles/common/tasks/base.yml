@@ -1,0 +1,14 @@
+- name: Install Homebrew
+  shell: roles/files/install_homebrew.sh >> /tmp/hombrew_install_out.txt creates=/usr/local/Cellar
+
+- name: Update Homebrew
+  command: brew update
+
+- name: Setup Homebrew Dupes
+  homebrew_tap: tap=homebrew/dupes state=present
+
+- name: Setup Homebrew Casks
+  homebrew_tap: tap=caskroom/cask state=present
+
+- name: Install Brew Cask
+  homebrew: name=brew-cask state=present
