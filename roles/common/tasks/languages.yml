@@ -1,3 +1,8 @@
+- name: Install Java
+  homebrew_cask: name=java state=present
+
+- debug: msg="If your Java application still asks for JRE installation, you might need to reboot or logout/login. Run `brew cask info java` on the command line for more info."
+
 - name: Install Python
   homebrew: name=python state=present
 
