@@ -15,3 +15,19 @@
 
 - name: Install coreutils
   homebrew:  name=coreutils state=present
+
+# These libs may be needed to build nokogiri
+
+- name: Install libxml2
+  homebrew: name=libxml2 state=present
+
+- name: Install libxslt
+  homebrew: name=libxslt state=present
+
+- name: Install libiconv
+  homebrew: name=libiconv state=present
+
+- name: Install apple-gcc42
+  homebrew: name=apple-gcc42 state=present
+
+# End nokogiri libs
