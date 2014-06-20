@@ -14,8 +14,6 @@
 
     - include: roles/common/tasks/databases.yml
 
-    - name: Install node
-      homebrew: name=node state=present
 
     - name: Install nginx
       homebrew: name=nginx state=present
