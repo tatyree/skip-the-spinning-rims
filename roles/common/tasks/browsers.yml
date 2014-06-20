@@ -1,0 +1,8 @@
+- name: Install Google Chrome
+  homebrew_cask: name=google-chrome state=present
+
+- name: Install Opera
+  homebrew_cask: name=opera state=present
+
+- name: Install Firefox 
+  homebrew_cask: name=firefox state=present
