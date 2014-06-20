@@ -14,7 +14,6 @@ A simple Ansible playbook to get an OSX box provisioned.
 
 1. If you're asked for a password, enter your standard account password;
    this is sudo surfacing and happens when you've got a non-managed
-version of the application already in the
-Application folder. 
+   version of the application already in the Application folder. 
 
 
