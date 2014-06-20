@@ -12,3 +12,6 @@
 
 - name: Install Brew Cask
   homebrew: name=brew-cask state=present
+
+- name: Install coreutils
+  homebrew:  name=coreutils state=present

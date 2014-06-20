@@ -14,10 +14,6 @@
 
     - include: roles/common/tasks/databases.yml
 
-    - name: Install coreutils
-      homebrew:  name=coreutils state=present
-
-
     - name: Install node
       homebrew: name=node state=present
 
