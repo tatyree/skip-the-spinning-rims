@@ -1,2 +1,5 @@
 - name: Install nginx
-  homebrew: name=nginx state=present
+  homebrew: name=nginx state=latest
+
+- name: Install unicorn gem globally
+  gem: name=unicorn state=latest
