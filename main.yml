@@ -15,3 +15,5 @@
     - include: roles/common/tasks/databases.yml
 
     - include: roles/common/tasks/webservers.yml
+
+    - include: roles/common/tasks/virtualization.yml
