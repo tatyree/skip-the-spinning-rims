@@ -9,3 +9,6 @@
 
 - name: Install emacs
   homebrew_cask: name=emacs state=present
+
+- name: Install gimp
+  homebrew_cask: name=gimp state=present
