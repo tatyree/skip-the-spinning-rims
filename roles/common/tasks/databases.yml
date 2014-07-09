@@ -6,6 +6,7 @@
 
 - name: Install cassandra
   homebrew: name=cassandra state=latest
+  ignore_errors: true
 
 - name: Install neo4j
   homebrew: name=neo4j state=latest
