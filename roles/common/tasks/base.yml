@@ -32,4 +32,7 @@
 - name: Install apple-gcc42
   homebrew: name=apple-gcc42 state=latest
 
+- name: Install ACK
+  homebrew: name=ack state=latest
+
 # End nokogiri libs
