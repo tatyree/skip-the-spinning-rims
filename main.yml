@@ -6,13 +6,15 @@
 
     - include: roles/common/tasks/base.yml
 
-    - include: roles/common/tasks/languages.yml
-
     - include: roles/common/tasks/browsers.yml
+
+    - include: roles/common/tasks/databases.yml
 
     - include: roles/common/tasks/editors.yml
 
-    - include: roles/common/tasks/databases.yml
+    - include: roles/common/tasks/languages.yml
+
+    - include: roles/common/tasks/media.yml
 
     - include: roles/common/tasks/webservers.yml
 
