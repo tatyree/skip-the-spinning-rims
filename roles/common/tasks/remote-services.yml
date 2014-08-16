@@ -1,0 +1,8 @@
+- name: Install Google drive 
+  homebrew_cask: name=google-drive state=present
+
+- name: Install Amazon cloud drive
+  homebrew_cask: name=amazon-cloud-drive state=present
+
+- name: Install Dropbox
+  homebrew_cask: name=dropbox state=present
