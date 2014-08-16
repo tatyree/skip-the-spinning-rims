@@ -1,0 +1,2 @@
+- name: Install LoL
+  homebrew_cask: name=league-of-legends state=present

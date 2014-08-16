@@ -16,6 +16,9 @@
 - name: Install coreutils
   homebrew:  name=coreutils state=latest
 
+- name: Install iterm2
+  homebrew_cask: name=iterm2 state=present
+
 - name: Install git
   homebrew: name=git state=latest
 # These libs may be needed to build nokogiri

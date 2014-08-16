@@ -10,6 +10,8 @@
 
     - include: roles/common/tasks/databases.yml
 
+    - include: roles/common/tasks/games.yml
+
     - include: roles/common/tasks/editors.yml
 
     - include: roles/common/tasks/languages.yml
