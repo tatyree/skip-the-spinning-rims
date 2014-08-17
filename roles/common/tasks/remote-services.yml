@@ -6,3 +6,6 @@
 
 - name: Install Dropbox
   homebrew_cask: name=dropbox state=present
+
+- name: Install Viber
+  homebrew_cask: name=viber state=present

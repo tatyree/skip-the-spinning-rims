@@ -15,3 +15,6 @@
 
 - name: Install hanbrakecli
   homebrew_cask: name=handbrakecli state=present
+
+- name: Install utorrent
+  homebrew_cask: name=utorrent state=present
