@@ -30,6 +30,9 @@
 - name: Install jruby 1.7.9
   command: rbenv install jruby-1.7.9 creates=~/.rbenv/versions/jruby-1.7.9
 
+- name: Set global ruby version 
+  copy: src=version dest=~/.ruby-version mode="0644"
+
 - name: Install node
   homebrew: name=node state=latest
 
