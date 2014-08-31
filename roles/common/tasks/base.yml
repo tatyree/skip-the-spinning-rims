@@ -21,6 +21,7 @@
 
 - name: Install git
   homebrew: name=git state=latest
+
 # These libs may be needed to build nokogiri
 
 - name: Install libxml2
@@ -38,7 +39,8 @@
 - name: Install ACK
   homebrew: name=ack state=latest
 
+# End nokogiri libs
+
 - name: Install electric-sheep
   homebrew_cask: name=electric-sheep state=present
 
-# End nokogiri libs
