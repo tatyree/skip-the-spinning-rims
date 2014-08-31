@@ -1,0 +1,5 @@
+- name: Install sizeup
+  homebrew_cask: name=sizeup state=present
+
+- name: Install cinch
+  homebrew_cask: name=cinch state=present

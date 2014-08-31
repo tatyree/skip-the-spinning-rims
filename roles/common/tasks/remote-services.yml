@@ -9,3 +9,9 @@
 
 - name: Install Viber
   homebrew_cask: name=viber state=present
+
+- name: Install Evernote
+  homebrew_cask: name=evernote state=present
+
+- name: Install Skype
+  homebrew_cask: name=skype state=present

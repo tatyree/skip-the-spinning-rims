@@ -27,6 +27,9 @@
 - name: Install ruby 1.9.3
   command: rbenv install 1.9.3-p545 creates=~/.rbenv/versions/1.9.3-p545
 
+- name: Install jruby 1.7.9
+  command: rbenv install jruby-1.7.9 creates=~/.rbenv/versions/jruby-1.7.9
+
 - name: Install node
   homebrew: name=node state=latest
 
