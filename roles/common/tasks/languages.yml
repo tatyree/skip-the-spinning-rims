@@ -33,6 +33,9 @@
 - name: Set global ruby version 
   copy: src=version dest=~/.ruby-version mode="0644"
 
+- name: Install the current rails gem
+  gem: name=rails state=latest
+
 - name: Install node
   homebrew: name=node state=latest
 
