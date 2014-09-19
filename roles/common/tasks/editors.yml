@@ -12,3 +12,6 @@
 
 - name: Install gimp
   homebrew_cask: name=gimp state=present
+
+- name: Install atom
+  homebrew_cask: name=atom state=present
