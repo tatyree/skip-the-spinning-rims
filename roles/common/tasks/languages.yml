@@ -36,8 +36,12 @@
 - name: Install the current rails gem
   gem: name=rails state=latest
 
+- name: Install the current bundler gem
+  gem: name=bundler state=latest
+
 - name: Install node
   homebrew: name=node state=latest
 
 - name: Install erlang
   homebrew: name=erlang state=latest
+

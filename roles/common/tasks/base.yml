@@ -1,6 +1,3 @@
-- name: Install Homebrew
-  shell: roles/files/install_homebrew.sh >> /tmp/hombrew_install_out.txt creates=/usr/local/Cellar
-
 - name: Update Homebrew
   command: brew update
 

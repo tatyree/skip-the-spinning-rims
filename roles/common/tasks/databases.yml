@@ -13,3 +13,6 @@
 
 - name: Install riak
   homebrew: name=riak state=latest
+
+- name: Install redis
+  homebrew: name=redis state=latest

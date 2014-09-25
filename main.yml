@@ -1,5 +1,6 @@
 - hosts: localhost
-  gather_facts: yes 
+  gather_facts: yes
+  connection: local
   sudo: no
 
   tasks:
@@ -25,3 +26,5 @@
     - include: roles/common/tasks/webservers.yml
 
     - include: roles/common/tasks/virtualization.yml
+
+    - include: roles/common/tasks/misc.yml

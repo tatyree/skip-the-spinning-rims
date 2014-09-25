@@ -1,23 +1,5 @@
 - name: Install imagemagick
   homebrew: name=imagemagick state=latest
 
-- name: Install VLC
-  homebrew_cask: name=vlc state=present
-
-- name: Install mplayer-osx-extended
-  homebrew_cask: name=mplayer-osx-extended state=present
-
-- name: Install handbrake
-  homebrew_cask: name=handbrake state=present
-
-- name: Install handbrakebatch
-  homebrew_cask: name=handbrakebatch state=present
-
-- name: Install hanbrakecli
-  homebrew_cask: name=handbrakecli state=present
-
-- name: Install utorrent
-  homebrew_cask: name=utorrent state=present
-
 - name: Install silverlight 
   homebrew_cask: name=silverlight state=present
