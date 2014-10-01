@@ -15,3 +15,6 @@
 
 - name: Install atom
   homebrew_cask: name=atom state=present
+
+- name: Install ctags
+  homebrew: name=ctags state=latest
