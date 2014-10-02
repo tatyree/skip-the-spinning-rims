@@ -7,6 +7,9 @@
 - name: Setup Homebrew Casks
   homebrew_tap: tap=caskroom/cask state=present
 
+- name: Setup Homebrew Cask Versions
+  homebrew_tap: tap=caskroom/versions state=present
+
 - name: Install Brew Cask
   homebrew: name=brew-cask state=latest
 
