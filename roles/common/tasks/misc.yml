@@ -9,3 +9,6 @@
 
 - name: Install growl
   homebrew_cask: name=growlnotify state=present
+
+- name: Install Apache Tika
+  homebrew: name=tika state=latest
