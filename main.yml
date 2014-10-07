@@ -21,6 +21,8 @@
 
     - include: roles/common/tasks/languages.yml
 
+    - include: roles/common/tasks/development.yml
+
     - include: roles/common/tasks/media.yml
 
     - include: roles/common/tasks/webservers.yml
