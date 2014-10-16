@@ -1,3 +1,5 @@
 - name: Install qt
   homebrew: name=qt state=latest
 
+- name: Heroku toolbelt
+  homebrew: name=heroku-toolbelt state=latest
