@@ -16,3 +16,6 @@
 
 - name: Install redis
   homebrew: name=redis state=latest
+
+- name: Install elasticsearch
+  homebrew: name=elasticsearch state=latest
