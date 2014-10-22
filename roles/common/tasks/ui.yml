@@ -3,3 +3,6 @@
 
 - name: Install cinch
   homebrew_cask: name=cinch state=present
+
+- name: Install cathode
+  homebrew_cask: name=cathode state=present
