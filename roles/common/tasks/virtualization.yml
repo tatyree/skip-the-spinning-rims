@@ -1,4 +1,4 @@
-- name: Install virtualbox 
+- name: Install virtualbox
   homebrew_cask: name=virtualbox state=present
 
 - name: Install vagrant
@@ -6,3 +6,6 @@
 
 - name: Install s3cmd
   homebrew: name=s3cmd state=latest
+
+- name: Install Docker
+  homebrew_cask: name=boot2docker state=present
