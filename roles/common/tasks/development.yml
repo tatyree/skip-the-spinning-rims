@@ -3,3 +3,6 @@
 
 - name: Heroku toolbelt
   homebrew: name=heroku-toolbelt state=latest
+
+- name: Platypus
+  homebrew_cask: name=platypus state=present
