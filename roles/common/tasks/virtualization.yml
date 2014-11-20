@@ -9,3 +9,11 @@
 
 - name: Install Docker
   homebrew_cask: name=boot2docker state=present
+
+- name: Install Fig 
+  homebrew: name=fig state=present
+
+- name: Set docker and fig enviroment variables
+  lineinfile: dest=~/.bashrc line="$(boot2docker shellinit)"
+  sudo: no
+
