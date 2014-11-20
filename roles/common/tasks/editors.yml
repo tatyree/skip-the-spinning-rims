@@ -1,6 +1,14 @@
 - name: Install macvim
   homebrew: name=macvim state=latest
 
+- name: Add wildignores to vimrc.after
+  lineinfile: dest=~/.vimrc.after line="set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/public/paperclip/*" create=yes
+  sudo: no
+
+- name: Add whitespace helpers to vimrc.after (depends on janus)
+  lineinfile: dest=~/.vimrc.after line="nnoremap <F2>     :FixWhitespace<CR>\nautocmd BufWritePre * :Fix" create=yes
+  sudo: no
+
 - name: Install sublime
   homebrew_cask: name=sublime-text state=present
 
