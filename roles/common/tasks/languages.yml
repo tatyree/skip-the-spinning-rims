@@ -21,32 +21,8 @@
 - name: Install ruby-build
   homebrew: name=ruby-build state=latest
 
-- name: Install ruby 2.1.5
-  command: rbenv install 2.1.5 creates=~/.rbenv/versions/2.1.5
-
-- name: Install ruby 2.1.4
-  command: rbenv install 2.1.4 creates=~/.rbenv/versions/2.1.4
-
-- name: Install ruby 2.1.3
-  command: rbenv install 2.1.3 creates=~/.rbenv/versions/2.1.3
-
-- name: Install ruby 2.1.2
-  command: rbenv install 2.1.2 creates=~/.rbenv/versions/2.1.2
-
-- name: Install ruby 2.1.1
-  command: rbenv install 2.1.1 creates=~/.rbenv/versions/2.1.1
-
-- name: Install ruby 2.1.0
-  command: rbenv install 2.1.0 creates=~/.rbenv/versions/2.1.0
-
-- name: Install ruby 1.9.3
-  command: rbenv install 1.9.3-p545 creates=~/.rbenv/versions/1.9.3-p545
-
-- name: Install jruby 1.7.9
-  command: rbenv install jruby-1.7.9 creates=~/.rbenv/versions/jruby-1.7.9
-
-- name: Install jruby 1.7.16.1
-  command: rbenv install jruby-1.7.16.1 creates=~/.rbenv/versions/jruby-1.7.16.1
+- name: Install ruby 2.2.3
+  command: rbenv install 2.2.3 creates=~/.rbenv/versions/2.2.3
 
 - name: Set global ruby version 
   copy: src=version dest=~/.ruby-version mode="0644"
