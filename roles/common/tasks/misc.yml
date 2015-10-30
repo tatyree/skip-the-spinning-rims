@@ -1,11 +1,1 @@
-#- name: Install phantomjs
-#  homebrew: name=phantomjs state=latest
 
-- name: Install pdftk
-  homebrew_cask: name=pdftk state=present
-
-#- name: Install libreoffice
-#  homebrew_cask: name=libreoffice state=present
-
-#- name: Install Apache Tika
-#  homebrew: name=tika state=latest
