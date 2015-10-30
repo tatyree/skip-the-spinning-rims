@@ -1,5 +1,5 @@
-- name: Install phantomjs
-  homebrew: name=phantomjs state=latest
+#- name: Install phantomjs
+#  homebrew: name=phantomjs state=latest
 
 - name: Install pdftk
   homebrew_cask: name=pdftk state=present
