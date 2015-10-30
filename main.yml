@@ -6,6 +6,8 @@
   tasks:
 
     - include: roles/common/tasks/base.yml
+    
+    - include: roles/common/tasks/languages.yml
 
     - include: roles/common/tasks/browsers.yml
 
@@ -18,8 +20,6 @@
     - include: roles/common/tasks/games.yml
 
     - include: roles/common/tasks/editors.yml
-
-    - include: roles/common/tasks/languages.yml
 
     - include: roles/common/tasks/development.yml
 
