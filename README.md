@@ -5,6 +5,8 @@ A simple Ansible playbook to get an OSX box provisioned.
 
 1. Install Xcode
 
+1. Install homebrew (http://brew.sh)
+
 1. Clone the project: `git clone git@github.com:tatyree/skip-the-spinning-rims.git`
 
 1. Install ansible (http://docs.ansible.com/intro_installation.html)
