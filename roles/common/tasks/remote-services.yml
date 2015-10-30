@@ -16,8 +16,8 @@
 - name: Install Skype
   homebrew_cask: name=skype state=present
   
-- name: Install Prey 
-  homebrew_cask: name=prey state=present
+#- name: Install Prey 
+#  homebrew_cask: name=prey state=present
 
 - name: Install Hipchat 
   homebrew_cask: name=hipchat state=present
