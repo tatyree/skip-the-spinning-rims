@@ -1,5 +1,11 @@
 - name: Install imagemagick
   homebrew: name=imagemagick state=latest
 
-- name: Install silverlight 
+- name: Install silverlight
   homebrew_cask: name=silverlight state=present
+
+- name: Install vlc
+  homebrew_cask: name=vlc state=present
+
+- name: Install handbrake
+  homebrew_cask: name=handbrake state=present
