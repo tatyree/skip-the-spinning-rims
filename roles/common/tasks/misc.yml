@@ -1,2 +1,5 @@
 - name: Install arq
   homebrew_cask: name=arq state=present
+
+- name: Install grandperspective
+  homebrew_cask: name=grandperspective state=present
