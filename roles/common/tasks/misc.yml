@@ -1,1 +1,2 @@
-
+- name: Install arq
+  homebrew_cask: name=arq state=present
