@@ -9,3 +9,6 @@
 
 - name: Install handbrake
   homebrew_cask: name=handbrake state=present
+
+- name: Install ffmpeg
+  homebrew: name=ffmpeg state=latest
