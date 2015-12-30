@@ -3,3 +3,6 @@
 
 - name: Install grandperspective
   homebrew_cask: name=grandperspective state=present
+
+- name: Install utorrent
+  homebrew_cask: name=utorrent state=present
