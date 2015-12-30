@@ -24,7 +24,10 @@
 - name: Install ruby 2.2.3
   command: rbenv install 2.2.3 creates=~/.rbenv/versions/2.2.3
 
-- name: Set global ruby version 
+- name: Install ruby 2.2.4
+  command: rbenv install 2.2.4 creates=~/.rbenv/versions/2.2.4
+
+- name: Set global ruby version
   copy: src=version dest=~/.ruby-version mode="0644"
 
 - name: Install the current rails gem
